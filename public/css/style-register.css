@@ -1,0 +1,117 @@
+*{ margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Roboto";
+}
+.main-header{
+    background-color: #eac926;
+    padding: 20px;
+    position: fixed;
+    top:0;
+}
+.logo{
+    width:200px;
+}
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+}
+.main-navbar{
+    display: none;
+}
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-navbar a{
+    text-decoration: none;
+    color: #222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+
+.hamburger-buttom{
+    display: block;
+    max-width: 50p;
+    padding: 15px 0px;
+    text-align: center;
+    margin: auto;
+    background-color:#1259c3;;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    height: 45px;
+    width: 45px;
+   
+} 
+.oculto{display:none ;}
+
+main{
+    width: 90%;
+    
+}  
+.contenedor-formulario{
+    margin-top: 170px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 10%;
+    padding: 5%;
+    font-size: 1.5rem;
+}
+.contenedor-formulario-radio{
+    display:flex;
+    flex-direction: column;
+   
+}
+.formulario-boton{
+    display: block;
+    text-align: center;
+    max-width: 20%;
+}
+
+@media(min-width: 769px){
+    .main-header-top-bar{
+        align-items: center;
+    
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header{
+        max-width: 350px ;
+        text-align: right;
+        margin: 0;
+    }
+    .hamburger-buttom{
+        display: none;
+    }
+    .main-navbar{
+        display: flex;
+
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin: 0 5px;
+    }
+}
+@media (min-width:1200px){
+    .main-header-top-bar, .main-navbar{
+    max-width: 1200px;
+    margin: auto;
+}
+    .main-navbar{
+        margin-top: 50px;
+    }
+}

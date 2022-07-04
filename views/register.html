@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7fcb000871.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style-register.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/images/logo-mercado-liebre.svg" class="logo">
+            <nav>
+                <form>
+                    <input type="text" placeholder="Buscar productos, marcas">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </nav>
+            <h2 class="copy-header">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
+
+        <a href="#" class="hamburger-buttom">
+            <i  class="fas fa-bars" ></i>
+        </a>
+        <nav class="main-navbar">
+            <ul class="left-navbar oculto">
+                <li><a href="/ofertas">Ofertas </a></li>
+                <li><a href="#">Tiendas Oficiales </a></li>
+                <li><a href="#">Vender </a></li>
+                <li><a href="#">Ayuda </a></li>
+            </ul>
+            <ul class="right-navbar oculto">
+                <li><a href="/register">Creá tu cuenta  </a><i class="fa-solid fa-id-card"></i></li>
+                <li></i><a href="/login">Ingresá </a><i class="fa-solid fa-right-to-bracket"></i></li>
+                <li><a href="#">Mis Compras </a><i class="fa-solid fa-basket-shopping"></i></li>
+            </ul>
+                
+            <div  >
+          
+            </div>
+        </nav>
+                
+    </header>
+
+  
+   <main class="contenedor-main">
+    <form action="#" method="POST" class="contenedor-formulario">
+        <label for="#">
+            <input type="text" name="Nombre"placeholder="Nombre y apellido">
+        </label>
+        <label for="#">
+            <input type="text" name="usuario" placeholder="Nombre de usuari@">
+        </label>
+        <label for="#">Fecha de nacimiento
+            <input type="date" name="fechaNacimiento" placeholder="date">
+        </label>
+        <label for="#">
+            <input type="text" name="domicilio" placeholder="Domicilio">
+        </label>
+        
+           
+         <label for="#"  >Perfil de usuario
+            <div class="contenedor-formulario-radio" >
+                <label for="">
+                <input type="radio" name="perfilusuarioComprar">Comprar
+                </label>
+                <label for="">
+                <input type="radio" name="perfilusuarioVender">Vender
+          
+        </div>        
+        </label >
+        <label for="#" class="contenedor-formulario-radio">Categorías de interés
+            <label ><input type="checkbox" name="categoriasDeInteres">Electro</label>
+            <label ><input type="checkbox" name="categoriasDeInteres">Moda</label>
+            <label ><input type="checkbox" name="categoriasDeInteres">Hogar</label>
+            <label ><input type="checkbox" name="categoriasDeInteres">Juguetería</label>
+            <label ><input type="checkbox" name="categoriasDeInteres">Vida sana</label>
+        </label>Foto de usuario
+        <label for=""><input type="file" name=avatar accept=".jpg, .png"></label>
+        <label for="">Contraseña
+            <input type="password" name="contraseña">
+        </label>
+        <label for="">Confirmar Contraseña
+            <input type="password" name="confirmarContraseña">
+        </label>
+        <div >
+            <button type="submit" class="formulario-boton">Enviar</button>
+            <button type="reset" class="formulario-boton">Borrar</button>
+        </div>    
+    </form>
+
+
+   </main>
+   <footer class="contenedor-footer">
+
+   </footer> 
+</body>
+</html>
