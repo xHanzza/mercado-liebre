@@ -6,7 +6,7 @@ const publicPath = path.join(__dirname, 'public');
 
 app.use(express.static(publicPath))
 
-app.listen(3005, ()=> {console.log("El servidor esta VIVO")});
+app.listen(process.env.PORT || 3005, ()=> {console.log("El servidor esta VIVO")});
 
 app.get("/", (req,res)=>{
     res.sendFile(path.resolve(__dirname,"./views/home.html"))
