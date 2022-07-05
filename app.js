@@ -3,10 +3,11 @@ const app = express();
 
 const path = require("path");
 const publicPath = path.join(__dirname, 'public');
+const port = process.env.PORT || 3005;
 
 app.use(express.static(publicPath))
 
-app.listen(process.env.PORT || 3005, ()=> {console.log("El servidor esta VIVO")});
+app.listen(port, ()=> {console.log("Sever running in port ${port}")});
 
 app.get("/", (req,res)=>{
     res.sendFile(path.resolve(__dirname,"./views/home.html"))
