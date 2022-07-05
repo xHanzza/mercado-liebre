@@ -7,7 +7,7 @@ const port = process.env.PORT || 3005;
 
 app.use(express.static(publicPath))
 
-app.listen(port, ()=> {console.log("Sever running in port"+ port)});
+app.listen(port, ()=> {console.log("Sever running in port "+ port)});
 
 app.get("/", (req,res)=>{
     res.sendFile(path.resolve(__dirname,"./views/home.html"))
